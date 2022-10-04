@@ -1,0 +1,84 @@
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 93px 15px;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity $timeDuration;
+}
+
+.backdrop--is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal {
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: $whiteColor;
+
+  @media screen and (min-width: $mobile) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 450px;
+    width: 100%;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform $timeDuration; 
+
+    .backdrop--is-hidden & {
+      transform: translate(-50%, -50%) scale(0.9);
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 528px;
+    width: 100%;
+  }
+  // position: absolute;
+  // min-width: 528px;
+  // min-height: 581px;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%) scale(1);
+  // background-color: $whiteColor;
+  // transition: transform $timeDuration, opacity $timeDuration;
+}
+
+.modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: $whiteColor;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal-btn__icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  color: currentColor;
+  transition: fill $timeDuration;
+
+  &:hover,
+  &:focus {
+    fill: $acentColor;
+  }
+}
+

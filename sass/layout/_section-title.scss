@@ -1,0 +1,15 @@
+.section-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  font-weight: $fontWeightMiddle;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}

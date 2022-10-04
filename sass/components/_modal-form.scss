@@ -1,0 +1,144 @@
+.form {
+  // padding: 0;
+  // margin: 0 auto;
+  // width: 448px;
+}
+
+.form__title {
+  display: block;
+  margin: 2px 0 12px;
+  font-weight: $fontWeightMiddle;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $mainColorText;
+    @media screen and (min-width: $desktop) {
+    line-height: 1.15;
+}
+}
+
+.form__item {
+  position: relative;
+}
+
+.form__label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $secondareColor;
+}
+
+.form__input {
+  margin-top: 4px;
+  margin-bottom: 10px;
+  padding-left: 42px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: $borderRadius;
+  height: 40px;
+  transition: border $timeDuration;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $acentColor;
+  }
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-4px);
+  transition: fill $timeDuration;
+
+  .form__item:hover & {
+    fill: $acentColor;
+  }
+}
+
+.form__input--text {
+  height: 120px;
+  padding: 12px 16px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $mainColorText;
+  resize: none;
+}
+
+.form__checkbox {
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.17;
+
+  @media screen and (min-width: $desktop) {
+    font-style: 14px;
+    line-height: 1.71;
+    padding-left: 12px;
+  }
+  // padding-left: 24px;
+}
+
+.checkbox__input {
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox__icon {
+  display: inline-block;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid $mainColorText;
+  border-radius: 2px;
+}
+
+.checkbox__input:checked + .checkbox__icon {
+  border: 0.2px solid $whiteColor;
+  background-color: $acentColor;
+  background-size: contain;
+  background-origin: border-box;
+  border-radius: 2px;
+  background-image: url("../images/iconcheck.svg");
+}
+
+.checkbox__label {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $secondareColor;
+  // display: inline-block;
+  // align-items: flex-start;
+}
+
+.checkbox__link {
+  color: $acentColor;
+  text-decoration: underline;
+}
+
+.form__button {
+  display: block;
+  margin: 0 auto;
+  font-weight: $fontWeightMiddle;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  padding: 10px 52px;
+  color: $whiteColor;
+  background-color: $acentColor;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: $borderRadius;
+  border: hidden;
+  transition: background-color $timeDuration, box-shadow $timeDuration;
+
+  &:hover,
+  &:focus {
+    background: $secondaryBackgroundColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
