@@ -137,27 +137,48 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="about__list">
             <li class="about__item">
-              <img
-                src="./images/box1.jpg"
-                width="370"
-                alt="Людина працює з комп'ютером"
-              />
+              <picture>
+              <source srcset="
+              ./images/about/optimized-webp/about__1.webp 1x, 
+              ./images/about/optimized-webp/about__1@2x.webp 2x, 
+              ./images/about/optimized-webp/about__1@3x.webp 3x" type="image/webp" />
+              <img srcset="
+              ./images/about/optimized-jpg/about__1.jpg 1x, 
+              ./images/about/optimized-jpg/about__1@2x.jpg 2x,
+              ./images/about/optimized-jpg/about__1@3x.jpg 3x"
+                src="./images/about/optimized-jpg/about__1.jpg"
+                alt="Людина працює з компютером" width="370" />
+            </picture>
               <div class="about__text">Десктопні додатки</div>
             </li>
             <li class="about__item">
-              <img
-                src="./images/box2.jpg"
-                width="370"
-                alt="Людина працює з телефоном"
-              />
+              <picture>
+              <source srcset="
+                ./images/about/optimized-webp/about__2.webp 1x, 
+                ./images/about/optimized-webp/about__2@2x.webp 2x, 
+                ./images/about/optimized-webp/about__2@3x.webp 3x" type="image/webp" />
+              <img srcset="
+                ./images/about/optimized-jpg/about__2.jpg 1x, 
+                ./images/about/optimized-jpg/about__2@2x.jpg 2x,
+                ./images/about/optimized-jpg/about__2@3x.jpg 3x"
+                src="./images/about/optimized-jpg/about__2.jpg"
+                alt="Людина працює з ноутбуком" width="370" />
+            </picture>
               <div class="about__text">Мобільні додатки</div>
             </li>
             <li class="about__item">
-              <img
-                src="./images/box3.jpg"
-                width="370"
-                alt="Людина працює з планшетом"
-              />
+              <picture>
+              <source srcset="
+                ./images/about/optimized-webp/about__3.webp 1x, 
+                ./images/about/optimized-webp/about__3@2x.webp 2x, 
+                ./images/about/optimized-webp/about__3@3x.webp 3x" type="image/webp" />
+              <img srcset="
+                ./images/about/optimized-jpg/about__3.jpg 1x, 
+                ./images/about/optimized-jpg/about__3@2x.jpg 2x,
+                ./images/about/optimized-jpg/about__3@3x.jpg 3x"
+                src="./images/about/optimized-jpg/about__3.jpg" alt="Людина працює на планшеті"
+                width="370" />
+            </picture>
               <div class="about__text">Дизайнерські рішення</div>
             </li>
           </ul>
@@ -169,11 +190,35 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                src="images/teamcard1.jpg"
-                alt="Игорь Демченко"
-                class="team__media"
-              />
+              <picture>
+              <source srcset="
+                ./images/team/optimisized-webp/team__1__mob.webp 1x, 
+                ./images/team/optimisized-webp/team__1__mob@2x.webp 2x, 
+                ./images/team/optimisized-webp/team__1__mob@3x.webp 3x" media="(max-width: 767px)" type="image/webp" />
+              <source srcset="
+                ./images/team/optimisized-webp/team__1__desk.webp 1x, 
+                ./images/team/optimisized-webp/team__1__desk@2x.webp 2x, 
+                ./images/team/optimisized-webp/team__1__desk@3x.webp 3x" media="(min-width: $desktop)"
+                type="image/webp" />
+              <source srcset="
+                ./images/team/optimisized-webp/team__1__tab.webp 1x, 
+                ./images/team/optimisized-webp/team__1__tab@2x.webp 2x, 
+                ./images/team/optimisized-webp/team__1__tab@3x.webp 3x" media="(min-width: $tablet)"
+                type="image/webp" />
+              <source srcset="
+                ./images/team/optimisized-jpg/team__1__desk.jpg 1x, 
+                ./images/team/optimisized-jpg/team__1__desk@2x.jpg 2x,
+                ./images/team/optimisized-jpg/team__1__desk@3x.jpg 3x" media="(min-width: $desktop)" />
+              <source srcset="
+                ./images/team/optimisized-jpg/team__1__tab.jpg 1x, 
+                ./images/team/optimisized-jpg/team__1__tab@2x.jpg 2x,
+                ./images/team/optimisized-jpg/team__1__tab@3x.jpg 3x" media="(min-width: $tablet)" />
+              <img srcset="
+                ./images/team/optimisized-jpg/team__1__mob.jpg 1x, 
+                ./images/team/optimisized-jpg/team__1__mob@2x.jpg 2x,
+                ./images/team/optimisized-jpg/team__1__mob@3x.jpg 3x"
+                src="./images/team/optimisized-jpg/team__1__mob.jpg" alt="фото Ігоря Демченко"/>
+            </picture>
               <div class="team__info">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -210,11 +255,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="images/teamcard2.jpg"
-                class="team__media"
-                alt="Ольга Репина"
-              />
+              <picture>
+              <source srcset="
+                            ./images/team/optimisized-webp/team__2__mob.webp 1x, 
+                            ./images/team/optimisized-webp/team__2__mob@2x.webp 2x, 
+                            ./images/team/optimisized-webp/team__2__mob@3x.webp 3x" media="(max-width: 767px)"
+                type="image/webp" />
+              <source srcset="
+                            ./images/team/optimisized-webp/team__2__desk.webp 1x, 
+                            ./images/team/optimisized-webp/team__2__desk@2x.webp 2x, 
+                            ./images/team/optimisized-webp/team__2__desk@3x.webp 3x" media="(min-width: $desktop)"
+                type="image/webp" />
+              <source srcset="
+                            ./images/team/optimisized-webp/team__2__tab.webp 1x, 
+                            ./images/team/optimisized-webp/team__2__tab@2x.webp 2x, 
+                            ./images/team/optimisized-webp/team__2__tab@3x.webp 3x" media="(min-width: $tablet)"
+                type="image/webp" />
+              <source srcset="
+                            ./images/team/optimisized-jpg/team__2__desk.jpg 1x, 
+                            ./images/team/optimisized-jpg/team__2__desk@2x.jpg 2x,
+                            ./images/team/optimisized-jpg/team__2__desk@3x.jpg 3x" media="(min-width: $desktop)" />
+              <source srcset="
+                            ./images/team/optimisized-jpg/team__2__tab.jpg 1x, 
+                            ./images/team/optimisized-jpg/team__2__tab@2x.jpg 2x,
+                            ./images/team/optimisized-jpg/team__2__tab@3x.jpg 3x" media="(min-width: $tablet)" />
+              <img srcset="
+                            ./images/team/optimisized-jpg/team__2__mob.jpg 1x, 
+                            ./images/team/optimisized-jpg/team__2__mob@2x.jpg 2x,
+                            ./images/team/optimisized-jpg/team__2__mob@3x.jpg 3x"
+                src="./images/team/optimisized-jpg/team__2__mob.jpg" alt="фото Ольги Репиної" />
+            </picture>
               <div class="team__info">
                 <h3 class="team__title">Ольга Репіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -251,11 +321,35 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="images/teamcard3.jpg"
-                class="team__media"
-                alt="Николай Тарасов"
-              />
+              <picture>
+              <source srcset="
+                ./images/team/optimisized-webp/team__3__mob.webp 1x, 
+                ./images/team/optimisized-webp/team__3__mob@2x.webp 2x, 
+                ./images/team/optimisized-webp/team__3__mob@3x.webp 3x" media="(max-width: 767px)" type="image/webp" />
+              <source srcset="
+                ./images/team/optimisized-webp/team__3__desk.webp 1x, 
+                ./images/team/optimisized-webp/team__3__desk@2x.webp 2x, 
+                ./images/team/optimisized-webp/team__3__desk@3x.webp 3x" media="(min-width: $desktop)"
+                type="image/webp" />
+              <source srcset="
+                ./images/team/optimisized-webp/team__3__tab.webp 1x, 
+                ./images/team/optimisized-webp/team__3__tab@2x.webp 2x, 
+                ./images/team/optimisized-webp/team__3__tab@3x.webp 3x" media="(min-width: $tablet)"
+                type="image/webp" />
+              <source srcset="
+                ./images/team/optimisized-jpg/team__3__desk.jpg 1x, 
+                ./images/team/optimisized-jpg/team__3__desk@2x.jpg 2x,
+                ./images/team/optimisized-jpg/team__3__desk@3x.jpg 3x" media="(min-width: $desktop)" />
+              <source srcset="
+                ./images/team/optimisized-jpg/team__3__tab.jpg 1x, 
+                ./images/team/optimisized-jpg/team__3__tab@2x.jpg 2x,
+                ./images/team/optimisized-jpg/team__3__tab@3x.jpg 3x" media="(min-width: $tablet)" />
+              <img srcset="
+                ./images/team/optimisized-jpg/team__3__mob.jpg 1x, 
+                ./images/team/optimisized-jpg/team__3__mob@2x.jpg 2x,
+                ./images/team/optimisized-jpg/team__3__mob@3x.jpg 3x"
+                src="./images/team/optimisized-jpg/team__3__mob.jpg" alt="фото Миколи Тарасова" />
+            </picture>
               <div class="team__info">
                 <h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -292,11 +386,35 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="images/teamcard4.jpg"
-                class="team__media"
-                alt="Михаил Ермаков"
-              />
+              <picture>
+              <source srcset="
+                ./images/team/optimisized-webp/team__4__mob.webp 1x, 
+                ./images/team/optimisized-webp/team__4__mob@2x.webp 2x, 
+                ./images/team/optimisized-webp/team__4__mob@3x.webp 3x" media="(max-width: 767px)" type="image/webp" />
+              <source srcset="
+                ./images/team/optimisized-webp/team__4__desk.webp 1x, 
+                ./images/team/optimisized-webp/team__4__desk@2x.webp 2x, 
+                ./images/team/optimisized-webp/team__4__desk@3x.webp 3x" media="(min-width: $desktop)"
+                type="image/webp" />
+              <source srcset="
+                ./images/team/optimisized-webp/team__4__tab.webp 1x, 
+                ./images/team/optimisized-webp/team__4__tab@2x.webp 2x, 
+                ./images/team/optimisized-webp/team__4__tab@3x.webp 3x" media="(min-width: $tablet)"
+                type="image/webp" />
+              <source srcset="
+                ./images/team/optimisized-jpg/team__4__desk.jpg 1x, 
+                ./images/team/optimisized-jpg/team__4__desk@2x.jpg 2x,
+                ./images/team/optimisized-jpg/team__4__desk@3x.jpg 3x" media="(min-width: $desktop)" />
+              <source srcset="
+                ./images/team/optimisized-jpg/team__4__tab.jpg 1x, 
+                ./images/team/optimisized-jpg/team__4__tab@2x.jpg 2x,
+                ./images/team/optimisized-jpg/team__4__tab@3x.jpg 3x" media="(min-width: $tablet)" />
+              <img srcset="
+                ./images/team/optimisized-jpg/team__4__mob.jpg 1x, 
+                ./images/team/optimisized-jpg/team__4__mob@2x.jpg 2x,
+                ./images/team/optimisized-jpg/team__4__mob@3x.jpg 3x"
+                src="./images/team/optimisized-jpg/team__4__mob.jpg" alt="фото Михайла Єрмакова" />
+            </picture>
               <div class="team__info">
                 <h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
