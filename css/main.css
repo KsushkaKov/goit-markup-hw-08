@@ -41,8 +41,7 @@ img {
 
 .container {
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   padding: 0px 15px;
 }
 @media screen and (min-width: 480px) {
@@ -311,11 +310,10 @@ img {
   background-color: #2f303a;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 @media screen and (max-width: 768px) {
   .hero {
-    max-width: 480px;
-    height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-optimisized-jpg/background__mob.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-optimisized-jpg/background__mob.jpg);
   }
@@ -334,8 +332,6 @@ img {
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .hero {
-    max-width: 768px;
-    height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-optimisized-jpg/background__tablet.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-optimisized-jpg/background__tablet.jpg);
   }
