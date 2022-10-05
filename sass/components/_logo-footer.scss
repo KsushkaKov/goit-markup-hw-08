@@ -3,6 +3,7 @@
   display: inline-block;
   color: $whiteColor;
   transition: color var(--time-duration);
+  padding: 0;
 
    &:hover,
    &:focus {

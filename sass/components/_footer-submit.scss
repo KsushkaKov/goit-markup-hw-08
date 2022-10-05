@@ -36,6 +36,7 @@
 
 .subscribe-folder__input {
   display: block;
+  outline: transparent;
   width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -59,7 +60,12 @@
     margin-bottom: unset;
     align-items: flex-start;
   }
+
+  &:focus {
+  border: 1px solid $acentColor;
 }
+}
+
 
 .subscribe-folder__btn {
   display: flex;
